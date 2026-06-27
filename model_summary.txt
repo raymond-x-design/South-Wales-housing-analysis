@@ -1,0 +1,38 @@
+
+Call:
+lm(formula = price ~ property_type + wimd_rank + year + district, 
+    data = housing_sw)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-383151  -49433  -10993   30494 1685402 
+
+Coefficients:
+                             Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)                 2.036e+05  1.652e+03  123.197   <2e-16 ***
+property_typeSemi-detached -1.274e+05  7.900e+02 -161.256   <2e-16 ***
+property_typeTerraced      -1.618e+05  7.985e+02 -202.665   <2e-16 ***
+property_typeFlat          -2.319e+05  1.128e+03 -205.553   <2e-16 ***
+wimd_rank                   5.940e+01  5.272e-01  112.662   <2e-16 ***
+year2021                    1.943e+04  9.404e+02   20.660   <2e-16 ***
+year2022                    4.283e+04  9.621e+02   44.524   <2e-16 ***
+year2023                    4.432e+04  1.010e+03   43.872   <2e-16 ***
+year2024                    4.473e+04  9.955e+02   44.931   <2e-16 ***
+year2025                    5.102e+04  1.001e+03   50.960   <2e-16 ***
+districtBRIDGEND            2.660e+04  1.558e+03   17.076   <2e-16 ***
+districtCAERPHILLY          1.700e+04  1.518e+03   11.197   <2e-16 ***
+districtCARDIFF             1.286e+05  1.435e+03   89.662   <2e-16 ***
+districtMERTHYR TYDFIL      2.361e+03  1.962e+03    1.204   0.2288    
+districtMONMOUTHSHIRE       1.154e+05  1.722e+03   67.040   <2e-16 ***
+districtNEATH PORT TALBOT  -5.039e+03  1.578e+03   -3.194   0.0014 ** 
+districtNEWPORT             6.457e+04  1.561e+03   41.355   <2e-16 ***
+districtSWANSEA             2.892e+04  1.479e+03   19.558   <2e-16 ***
+districtTORFAEN             2.832e+04  1.695e+03   16.707   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 96160 on 124522 degrees of freedom
+  (10528 observations deleted due to missingness)
+Multiple R-squared:  0.525,	Adjusted R-squared:  0.5249 
+F-statistic:  7645 on 18 and 124522 DF,  p-value: < 2.2e-16
+
